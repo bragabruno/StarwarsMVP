@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/PeopleFragment"
+    android:id="@+id/star_wars_graph">
+
+    <fragment
+        android:id="@+id/PeopleFragment"
+        android:name="com.example.starwarsmvp.view.PeopleFragment"
+        android:label="Star Wars People"
+        tools:layout="@layout/fragment_general">
+
+        <action
+            android:id="@+id/action_PeopleFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/PlanetsFragment"
+        android:name="com.example.starwarsmvp.view.PlanetsFragment"
+        android:label="Star Wars Planets"
+        tools:layout="@layout/fragment_general">
+
+        <action
+            android:id="@+id/action_PlanetsFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/StarshipFragment"
+        android:name="com.example.starwarsmvp.view.StarshipFragment"
+        android:label="Star Wars Starships"
+        tools:layout="@layout/fragment_general">
+
+        <action
+            android:id="@+id/action_StarshipFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailsFragment"
+        android:name="com.example.starwarsmvp.view.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_general" />
+
+</navigation>
